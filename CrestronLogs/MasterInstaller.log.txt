@@ -1,0 +1,39 @@
+05/13/2019 15:30:48  :  Begin Download and Install Files
+05/13/2019 15:30:59  :  Preparing to download..:  Crestron Database
+05/13/2019 15:30:59  :  Preparing to download..:  Device Database
+05/13/2019 15:30:59  :  Preparing to download..:  Toolbox
+05/13/2019 15:30:59  :  Preparing to download..:  SIMPL Windows
+05/13/2019 15:30:59  :  Response File Downloaded.:  Crestron Database
+05/13/2019 15:30:59  :  Response File Downloaded.:  Device Database
+05/13/2019 15:30:59  :  Response File Downloaded.:  Toolbox
+05/13/2019 15:30:59  :  Response File Downloaded.:  SIMPL Windows
+05/13/2019 15:30:59  :  Downloaded.:  SIMPL Windows
+05/13/2019 15:31:01  :  Downloading...:  Crestron Database
+05/13/2019 15:31:01  :  Downloading...:  Device Database
+05/13/2019 15:31:01  :  Downloading...:  Toolbox
+05/13/2019 15:37:34  :  Downloaded.:  Toolbox
+05/13/2019 15:39:12  :  Downloaded.:  Crestron Database
+05/13/2019 15:40:40  :  Downloaded.:  Device Database
+05/13/2019 15:41:10  :  Preparing to install...:  Crestron Database
+05/13/2019 15:41:10  :  Preparing to install...:  Device Database
+05/13/2019 15:41:10  :  Preparing to install...:  Toolbox
+05/13/2019 15:41:10  :  Preparing to install...:  SIMPL Windows
+05/13/2019 15:41:10  :  Installing using Inno Setup: Crestron Database
+05/13/2019 15:41:10  :  Install Command Line = C:\Program Files (x86)\Crestron\Downloads\crestron_database_77.05.001.00.exe /MASTERINSTALLER=TRUE /VERYSILENT /NORESTART /DIR="C:\Program Files (x86)\Crestron\Cresdb" /LOG="C:\Program Files (x86)\Crestron\Downloads\InnoSetup.log" 
+05/13/2019 15:41:10  :  Installing...:  Crestron Database
+05/13/2019 15:41:51  :  MasterInstaller_Install.log not written for Crestron Database
+05/13/2019 15:41:51  :  Installed.:  Crestron Database
+05/13/2019 15:41:51  :  Installing using Inno Setup: Device Database
+05/13/2019 15:41:51  :  Install Command Line = C:\Program Files (x86)\Crestron\Downloads\device_database_103.05.001.00.exe /MASTERINSTALLER=TRUE /VERYSILENT /NORESTART /DIR="C:\Program Files (x86)\Crestron\cresdb" /LOG="C:\Program Files (x86)\Crestron\Downloads\InnoSetup.log" 
+05/13/2019 15:41:51  :  Installing...:  Device Database
+05/13/2019 15:42:28  :  MasterInstaller_Install.log not written for Device Database
+05/13/2019 15:42:28  :  Installed.:  Device Database
+05/13/2019 15:42:28  :  Installing using Inno Setup: Toolbox
+05/13/2019 15:42:28  :  Install Command Line = C:\Program Files (x86)\Crestron\Downloads\crestron_toolbox_3.03.148.00.exe /MASTERINSTALLER=TRUE /VERYSILENT /NORESTART /DIR="C:\Program Files (x86)\Crestron\Toolbox" /LOG="C:\Program Files (x86)\Crestron\Downloads\InnoSetup.log" 
+05/13/2019 15:42:28  :  Installing...:  Toolbox
+05/13/2019 15:44:45  :  MasterInstaller_Install.log not written for Toolbox
+05/13/2019 15:44:45  :  Installed.:  Toolbox
+05/13/2019 15:44:45  :  Installing using Inno Setup: SIMPL Windows
+05/13/2019 15:44:45  :  Install Command Line = C:\Program Files (x86)\Crestron\Downloads\simpl_windows_4.11.06.01.exe /MASTERINSTALLER=TRUE /VERYSILENT /NORESTART /DIR="C:\Program Files (x86)\Crestron\Simpl" /LOG="C:\Program Files (x86)\Crestron\Downloads\InnoSetup.log" 
+05/13/2019 15:44:45  :  Installing...:  SIMPL Windows
+05/13/2019 15:45:05  :  MasterInstaller_Install.log not written for SIMPL Windows

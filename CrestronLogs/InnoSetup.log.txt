@@ -1,0 +1,411 @@
+2019-05-13 15:44:46.065   Log opened. (Time zone: UTC-07:00)
+2019-05-13 15:44:46.065   Setup version: Inno Setup version 5.4.2 (a)
+2019-05-13 15:44:46.065   Original Setup EXE: C:\Program Files (x86)\Crestron\Downloads\simpl_windows_4.11.06.01.exe
+2019-05-13 15:44:46.065   Setup command line: /SL5="$C044E,18841420,54272,C:\Program Files (x86)\Crestron\Downloads\simpl_windows_4.11.06.01.exe" /MASTERINSTALLER=TRUE /VERYSILENT /NORESTART /DIR="C:\Program Files (x86)\Crestron\Simpl" /LOG="C:\Program Files (x86)\Crestron\Downloads\InnoSetup.log" 
+2019-05-13 15:44:46.065   Windows version: 6.2.9200  (NT platform: Yes)
+2019-05-13 15:44:46.065   64-bit Windows: Yes
+2019-05-13 15:44:46.065   Processor architecture: x64
+2019-05-13 15:44:46.065   User privileges: Administrative
+2019-05-13 15:44:46.069   64-bit install mode: No
+2019-05-13 15:44:46.072   Created temporary directory: C:\Users\SOLOWO~1\AppData\Local\Temp\is-UR0CI.tmp
+2019-05-13 15:44:46.629   Starting the installation process.
+2019-05-13 15:44:46.632   Creating directory: C:\Program Files (x86)\Crestron\Simpl
+2019-05-13 15:44:46.634   Directory for uninstall files: C:\Program Files (x86)\Crestron\Simpl
+2019-05-13 15:44:46.636   Creating new uninstall log: C:\Program Files (x86)\Crestron\Simpl\unins000.dat
+2019-05-13 15:44:46.641   -- File entry --
+2019-05-13 15:44:46.641   Dest filename: C:\Program Files (x86)\Crestron\Simpl\unins000.exe
+2019-05-13 15:44:46.642   Time stamp of our file: 2019-05-13 15:44:45.620
+2019-05-13 15:44:46.642   Installing the file.
+2019-05-13 15:44:46.644   Uninstaller requires administrator: Yes
+2019-05-13 15:44:46.646   Successfully installed the file.
+2019-05-13 15:44:46.646   -- File entry --
+2019-05-13 15:44:46.646   Dest filename: C:\Program Files (x86)\Crestron\Simpl\crestron_DotNetFrameWork_Module.exe
+2019-05-13 15:44:46.646   Time stamp of our file: 2019-01-08 14:24:28.000
+2019-05-13 15:44:46.646   Installing the file.
+2019-05-13 15:44:46.663   Successfully installed the file.
+2019-05-13 15:44:47.590   -- File entry --
+2019-05-13 15:44:47.590   Dest filename: C:\Program Files (x86)\Crestron\Simpl\crestron_mvc2008redistributable_module.exe
+2019-05-13 15:44:47.590   Time stamp of our file: 2019-01-08 14:24:32.000
+2019-05-13 15:44:47.590   Installing the file.
+2019-05-13 15:44:47.663   Successfully installed the file.
+2019-05-13 15:44:54.640   -- File entry --
+2019-05-13 15:44:54.640   Dest filename: C:\Program Files (x86)\Crestron\Simpl\DotNetCompactFrameWork_Install.exe
+2019-05-13 15:44:54.640   Time stamp of our file: 2019-01-08 14:24:28.000
+2019-05-13 15:44:54.640   Installing the file.
+2019-05-13 15:44:54.653   Successfully installed the file.
+2019-05-13 15:45:01.130   -- File entry --
+2019-05-13 15:45:01.130   Dest filename: C:\Users\SOLOWO~1\AppData\Local\Temp\is-UR0CI.tmp\capicom_dc_sdk.msi
+2019-05-13 15:45:01.130   Time stamp of our file: 2019-01-08 14:24:32.000
+2019-05-13 15:45:01.131   Installing the file.
+2019-05-13 15:45:01.279   Successfully installed the file.
+2019-05-13 15:45:02.276   -- File entry --
+2019-05-13 15:45:02.277   Dest filename: C:\Program Files (x86)\Crestron\Simpl\BsSndRpt.exe
+2019-05-13 15:45:02.277   Time stamp of our file: 2019-01-08 14:23:14.000
+2019-05-13 15:45:02.277   Installing the file.
+2019-05-13 15:45:02.299   Successfully installed the file.
+2019-05-13 15:45:02.299   -- File entry --
+2019-05-13 15:45:02.299   Dest filename: C:\Program Files (x86)\Crestron\Simpl\BugSplat.dll
+2019-05-13 15:45:02.299   Time stamp of our file: 2019-01-08 14:23:14.000
+2019-05-13 15:45:02.299   Installing the file.
+2019-05-13 15:45:02.319   Successfully installed the file.
+2019-05-13 15:45:02.320   -- File entry --
+2019-05-13 15:45:02.320   Dest filename: C:\Program Files (x86)\Crestron\Simpl\BugSplatRc.dll
+2019-05-13 15:45:02.320   Time stamp of our file: 2019-01-08 14:23:14.000
+2019-05-13 15:45:02.320   Installing the file.
+2019-05-13 15:45:02.325   Successfully installed the file.
+2019-05-13 15:45:02.325   -- File entry --
+2019-05-13 15:45:02.326   Dest filename: C:\Program Files (x86)\Crestron\Simpl\CDbDvc.dll
+2019-05-13 15:45:02.326   Time stamp of our file: 2019-03-12 12:41:18.000
+2019-05-13 15:45:02.326   Installing the file.
+2019-05-13 15:45:02.330   Successfully installed the file.
+2019-05-13 15:45:02.330   -- File entry --
+2019-05-13 15:45:02.330   Dest filename: C:\Program Files (x86)\Crestron\Simpl\cmcff32.dll
+2019-05-13 15:45:02.331   Time stamp of our file: 2019-03-12 12:41:16.000
+2019-05-13 15:45:02.331   Installing the file.
+2019-05-13 15:45:02.339   Successfully installed the file.
+2019-05-13 15:45:02.340   -- File entry --
+2019-05-13 15:45:02.340   Dest filename: C:\Program Files (x86)\Crestron\Simpl\cmcfgmgr.dll
+2019-05-13 15:45:02.340   Time stamp of our file: 2019-03-12 12:43:46.000
+2019-05-13 15:45:02.340   Installing the file.
+2019-05-13 15:45:02.360   Successfully installed the file.
+2019-05-13 15:45:02.361   -- File entry --
+2019-05-13 15:45:02.361   Dest filename: C:\Program Files (x86)\Crestron\Simpl\CmCtrlDB.dll
+2019-05-13 15:45:02.361   Time stamp of our file: 2019-03-12 12:41:04.000
+2019-05-13 15:45:02.361   Installing the file.
+2019-05-13 15:45:02.367   Successfully installed the file.
+2019-05-13 15:45:02.367   -- File entry --
+2019-05-13 15:45:02.367   Dest filename: C:\Program Files (x86)\Crestron\Simpl\CmCtrls.dll
+2019-05-13 15:45:02.367   Time stamp of our file: 2019-03-12 12:40:52.000
+2019-05-13 15:45:02.367   Installing the file.
+2019-05-13 15:45:02.380   Successfully installed the file.
+2019-05-13 15:45:02.380   -- File entry --
+2019-05-13 15:45:02.380   Dest filename: C:\Program Files (x86)\Crestron\Simpl\cmcvtbin.dll
+2019-05-13 15:45:02.380   Time stamp of our file: 2019-03-12 12:45:06.000
+2019-05-13 15:45:02.380   Installing the file.
+2019-05-13 15:45:02.419   Successfully installed the file.
+2019-05-13 15:45:02.420   -- File entry --
+2019-05-13 15:45:02.420   Dest filename: C:\Program Files (x86)\Crestron\Simpl\CmDbBase.dll
+2019-05-13 15:45:02.420   Time stamp of our file: 2019-03-12 12:40:56.000
+2019-05-13 15:45:02.420   Installing the file.
+2019-05-13 15:45:02.424   Successfully installed the file.
+2019-05-13 15:45:02.424   -- File entry --
+2019-05-13 15:45:02.424   Dest filename: C:\Program Files (x86)\Crestron\Simpl\CmDbMgr.dll
+2019-05-13 15:45:02.425   Time stamp of our file: 2019-03-12 12:42:06.000
+2019-05-13 15:45:02.425   Installing the file.
+2019-05-13 15:45:02.432   Successfully installed the file.
+2019-05-13 15:45:02.432   -- File entry --
+2019-05-13 15:45:02.432   Dest filename: C:\Program Files (x86)\Crestron\Simpl\Cmiol32.dll
+2019-05-13 15:45:02.432   Time stamp of our file: 2019-03-12 12:42:00.000
+2019-05-13 15:45:02.432   Installing the file.
+2019-05-13 15:45:02.522   Successfully installed the file.
+2019-05-13 15:45:02.522   -- File entry --
+2019-05-13 15:45:02.522   Dest filename: C:\Program Files (x86)\Crestron\Simpl\CmIrMgr.dll
+2019-05-13 15:45:02.522   Time stamp of our file: 2019-03-12 12:41:14.000
+2019-05-13 15:45:02.522   Installing the file.
+2019-05-13 15:45:02.529   Successfully installed the file.
+2019-05-13 15:45:02.529   -- File entry --
+2019-05-13 15:45:02.529   Dest filename: C:\Program Files (x86)\Crestron\Simpl\Cmntvw32.dll
+2019-05-13 15:45:02.529   Time stamp of our file: 2019-03-12 12:42:30.000
+2019-05-13 15:45:02.529   Installing the file.
+2019-05-13 15:45:02.536   Successfully installed the file.
+2019-05-13 15:45:02.537   -- File entry --
+2019-05-13 15:45:02.537   Dest filename: C:\Program Files (x86)\Crestron\Simpl\CmSerMgr.dll
+2019-05-13 15:45:02.537   Time stamp of our file: 2019-03-12 12:41:36.000
+2019-05-13 15:45:02.537   Installing the file.
+2019-05-13 15:45:02.542   Successfully installed the file.
+2019-05-13 15:45:02.542   -- File entry --
+2019-05-13 15:45:02.542   Dest filename: C:\Program Files (x86)\Crestron\Simpl\CMTIO32.dll
+2019-05-13 15:45:02.542   Time stamp of our file: 2019-03-12 12:40:52.000
+2019-05-13 15:45:02.542   Installing the file.
+2019-05-13 15:45:02.546   Successfully installed the file.
+2019-05-13 15:45:02.546   -- File entry --
+2019-05-13 15:45:02.546   Dest filename: C:\Program Files (x86)\Crestron\Simpl\ConnectionByLocation.xsl
+2019-05-13 15:45:02.546   Time stamp of our file: 2019-01-08 14:23:04.000
+2019-05-13 15:45:02.546   Installing the file.
+2019-05-13 15:45:02.548   Successfully installed the file.
+2019-05-13 15:45:02.548   -- File entry --
+2019-05-13 15:45:02.549   Dest filename: C:\Program Files (x86)\Crestron\Simpl\connectionsheet.xsl
+2019-05-13 15:45:02.549   Time stamp of our file: 2019-01-08 14:23:04.000
+2019-05-13 15:45:02.549   Installing the file.
+2019-05-13 15:45:02.551   Successfully installed the file.
+2019-05-13 15:45:02.551   -- File entry --
+2019-05-13 15:45:02.551   Dest filename: C:\Program Files (x86)\Crestron\Simpl\Crestron.Tools.SIMPLSharp.Services.dll
+2019-05-13 15:45:02.552   Time stamp of our file: 2019-01-08 14:23:36.000
+2019-05-13 15:45:02.552   Installing the file.
+2019-05-13 15:45:02.580   Successfully installed the file.
+2019-05-13 15:45:02.580   -- File entry --
+2019-05-13 15:45:02.580   Dest filename: C:\Program Files (x86)\Crestron\Simpl\crestron_DotNetFrameWork_Module.exe
+2019-05-13 15:45:02.580   Time stamp of our file: 2019-01-08 14:24:28.000
+2019-05-13 15:45:02.580   Dest file exists.
+2019-05-13 15:45:02.580   Time stamp of existing file: 2019-01-08 14:24:28.000
+2019-05-13 15:45:02.580   Installing the file.
+2019-05-13 15:45:02.592   Successfully installed the file.
+2019-05-13 15:45:02.593   -- File entry --
+2019-05-13 15:45:02.593   Dest filename: C:\Program Files (x86)\Crestron\Simpl\crestron_mvc2008redistributable_module.exe
+2019-05-13 15:45:02.593   Time stamp of our file: 2019-01-08 14:24:32.000
+2019-05-13 15:45:02.593   Dest file exists.
+2019-05-13 15:45:02.593   Time stamp of existing file: 2019-01-08 14:24:32.000
+2019-05-13 15:45:02.593   Installing the file.
+2019-05-13 15:45:02.651   Successfully installed the file.
+2019-05-13 15:45:02.651   -- File entry --
+2019-05-13 15:45:02.651   Dest filename: C:\Program Files (x86)\Crestron\Simpl\Crestron_Release_Notes_2014.png
+2019-05-13 15:45:02.652   Time stamp of our file: 2019-01-08 14:21:46.000
+2019-05-13 15:45:02.652   Installing the file.
+2019-05-13 15:45:02.656   Successfully installed the file.
+2019-05-13 15:45:02.656   -- File entry --
+2019-05-13 15:45:02.656   Dest filename: C:\Program Files (x86)\Crestron\Simpl\CSCompilerWrapper.dll
+2019-05-13 15:45:02.656   Time stamp of our file: 2019-03-12 12:41:24.000
+2019-05-13 15:45:02.656   Installing the file.
+2019-05-13 15:45:02.661   Successfully installed the file.
+2019-05-13 15:45:02.661   -- File entry --
+2019-05-13 15:45:02.661   Dest filename: C:\Program Files (x86)\Crestron\Simpl\CSharpCompiler.dll
+2019-05-13 15:45:02.662   Time stamp of our file: 2019-03-12 12:52:06.000
+2019-05-13 15:45:02.662   Installing the file.
+2019-05-13 15:45:02.682   Successfully installed the file.
+2019-05-13 15:45:02.682   -- File entry --
+2019-05-13 15:45:02.682   Dest filename: C:\Program Files (x86)\Crestron\Simpl\dbghelp.dll
+2019-05-13 15:45:02.682   Time stamp of our file: 2019-01-08 14:23:14.000
+2019-05-13 15:45:02.682   Installing the file.
+2019-05-13 15:45:02.748   Successfully installed the file.
+2019-05-13 15:45:02.749   -- File entry --
+2019-05-13 15:45:02.749   Dest filename: C:\Program Files (x86)\Crestron\Simpl\DotNetCompactFrameWork_Install.exe
+2019-05-13 15:45:02.750   Time stamp of our file: 2019-01-08 14:24:28.000
+2019-05-13 15:45:02.750   Dest file exists.
+2019-05-13 15:45:02.751   Time stamp of existing file: 2019-01-08 14:24:28.000
+2019-05-13 15:45:02.751   Installing the file.
+2019-05-13 15:45:02.765   Successfully installed the file.
+2019-05-13 15:45:02.765   -- File entry --
+2019-05-13 15:45:02.765   Dest filename: C:\Program Files (x86)\Crestron\Simpl\doxygen.png
+2019-05-13 15:45:02.765   Time stamp of our file: 2019-03-12 12:52:12.000
+2019-05-13 15:45:02.765   Installing the file.
+2019-05-13 15:45:02.767   Successfully installed the file.
+2019-05-13 15:45:02.767   -- File entry --
+2019-05-13 15:45:02.767   Dest filename: C:\Program Files (x86)\Crestron\Simpl\DUNZIP32.DLL
+2019-05-13 15:45:02.767   Time stamp of our file: 2019-01-08 14:24:00.000
+2019-05-13 15:45:02.767   Installing the file.
+2019-05-13 15:45:02.775   Successfully installed the file.
+2019-05-13 15:45:02.775   -- File entry --
+2019-05-13 15:45:02.775   Dest filename: C:\Program Files (x86)\Crestron\Simpl\DZIP32.DLL
+2019-05-13 15:45:02.775   Time stamp of our file: 2019-01-08 14:24:00.000
+2019-05-13 15:45:02.775   Installing the file.
+2019-05-13 15:45:02.790   Successfully installed the file.
+2019-05-13 15:45:02.790   -- File entry --
+2019-05-13 15:45:02.790   Dest filename: C:\Program Files (x86)\Crestron\Simpl\Errlog32.dll
+2019-05-13 15:45:02.790   Time stamp of our file: 2019-03-12 12:41:06.000
+2019-05-13 15:45:02.790   Installing the file.
+2019-05-13 15:45:02.831   Successfully installed the file.
+2019-05-13 15:45:02.831   -- File entry --
+2019-05-13 15:45:02.831   Dest filename: C:\Program Files (x86)\Crestron\Simpl\index.html
+2019-05-13 15:45:02.831   Time stamp of our file: 2019-03-12 12:52:12.000
+2019-05-13 15:45:02.831   Installing the file.
+2019-05-13 15:45:02.833   Successfully installed the file.
+2019-05-13 15:45:02.834   -- File entry --
+2019-05-13 15:45:02.834   Dest filename: C:\Program Files (x86)\Crestron\Simpl\Interop.CAPICOM.dll
+2019-05-13 15:45:02.834   Time stamp of our file: 2019-03-12 12:41:16.000
+2019-05-13 15:45:02.834   Installing the file.
+2019-05-13 15:45:02.839   Successfully installed the file.
+2019-05-13 15:45:02.840   -- File entry --
+2019-05-13 15:45:02.840   Dest filename: C:\Program Files (x86)\Crestron\Simpl\Ionic.Zip.dll
+2019-05-13 15:45:02.840   Time stamp of our file: 2019-01-08 14:23:36.000
+2019-05-13 15:45:02.840   Installing the file.
+2019-05-13 15:45:02.878   Successfully installed the file.
+2019-05-13 15:45:02.879   -- File entry --
+2019-05-13 15:45:02.879   Dest filename: C:\Program Files (x86)\Crestron\Simpl\logogr.jpg
+2019-05-13 15:45:02.879   Time stamp of our file: 2019-01-08 14:23:04.000
+2019-05-13 15:45:02.879   Installing the file.
+2019-05-13 15:45:02.891   Successfully installed the file.
+2019-05-13 15:45:02.892   -- File entry --
+2019-05-13 15:45:02.892   Dest filename: C:\Program Files (x86)\Crestron\Simpl\Mono.Cecil.dll
+2019-05-13 15:45:02.892   Time stamp of our file: 2019-01-08 14:23:36.000
+2019-05-13 15:45:02.892   Installing the file.
+2019-05-13 15:45:02.909   Successfully installed the file.
+2019-05-13 15:45:02.909   -- File entry --
+2019-05-13 15:45:02.909   Dest filename: C:\Program Files (x86)\Crestron\Simpl\Mono.Cecil.Pdb.dll
+2019-05-13 15:45:02.909   Time stamp of our file: 2019-01-08 14:23:36.000
+2019-05-13 15:45:02.909   Installing the file.
+2019-05-13 15:45:02.916   Successfully installed the file.
+2019-05-13 15:45:02.916   -- File entry --
+2019-05-13 15:45:02.917   Dest filename: C:\Program Files (x86)\Crestron\Simpl\Mono.Cecil.Rocks.dll
+2019-05-13 15:45:02.917   Time stamp of our file: 2019-01-08 14:23:36.000
+2019-05-13 15:45:02.917   Installing the file.
+2019-05-13 15:45:02.925   Successfully installed the file.
+2019-05-13 15:45:02.926   -- File entry --
+2019-05-13 15:45:02.926   Dest filename: C:\Program Files (x86)\Crestron\Simpl\Newtonsoft.Json.dll
+2019-05-13 15:45:02.926   Time stamp of our file: 2019-01-08 14:23:36.000
+2019-05-13 15:45:02.926   Installing the file.
+2019-05-13 15:45:02.949   Successfully installed the file.
+2019-05-13 15:45:02.949   -- File entry --
+2019-05-13 15:45:02.949   Dest filename: C:\Program Files (x86)\Crestron\Simpl\pages.html
+2019-05-13 15:45:02.949   Time stamp of our file: 2019-03-12 12:52:12.000
+2019-05-13 15:45:02.949   Installing the file.
+2019-05-13 15:45:02.951   Successfully installed the file.
+2019-05-13 15:45:02.952   -- File entry --
+2019-05-13 15:45:02.952   Dest filename: C:\Program Files (x86)\Crestron\Simpl\S2_SPlsCplr.dll
+2019-05-13 15:45:02.952   Time stamp of our file: 2019-03-12 12:42:48.000
+2019-05-13 15:45:02.952   Installing the file.
+2019-05-13 15:45:02.996   Successfully installed the file.
+2019-05-13 15:45:02.997   -- File entry --
+2019-05-13 15:45:02.997   Dest filename: C:\Program Files (x86)\Crestron\Simpl\S2_SPlsGnu.dll
+2019-05-13 15:45:02.997   Time stamp of our file: 2019-03-12 12:42:04.000
+2019-05-13 15:45:02.997   Installing the file.
+2019-05-13 15:45:03.003   Successfully installed the file.
+2019-05-13 15:45:03.003   -- File entry --
+2019-05-13 15:45:03.003   Dest filename: C:\Program Files (x86)\Crestron\Simpl\S3_SPls.exe
+2019-05-13 15:45:03.003   Time stamp of our file: 2019-03-12 12:52:14.000
+2019-05-13 15:45:03.003   Installing the file.
+2019-05-13 15:45:03.033   Successfully installed the file.
+2019-05-13 15:45:03.033   -- File entry --
+2019-05-13 15:45:03.033   Dest filename: C:\Program Files (x86)\Crestron\Simpl\S3_SPlsCplr.dll
+2019-05-13 15:45:03.033   Time stamp of our file: 2019-03-12 12:43:32.000
+2019-05-13 15:45:03.033   Installing the file.
+2019-05-13 15:45:03.070   Successfully installed the file.
+2019-05-13 15:45:03.070   -- File entry --
+2019-05-13 15:45:03.070   Dest filename: C:\Program Files (x86)\Crestron\Simpl\S3_SPlsDbgr.dll
+2019-05-13 15:45:03.070   Time stamp of our file: 2019-03-12 12:41:30.000
+2019-05-13 15:45:03.070   Installing the file.
+2019-05-13 15:45:03.076   Successfully installed the file.
+2019-05-13 15:45:03.076   -- File entry --
+2019-05-13 15:45:03.076   Dest filename: C:\Program Files (x86)\Crestron\Simpl\S3_SPlsProj.dll
+2019-05-13 15:45:03.076   Time stamp of our file: 2019-03-12 12:43:40.000
+2019-05-13 15:45:03.076   Installing the file.
+2019-05-13 15:45:03.082   Successfully installed the file.
+2019-05-13 15:45:03.082   -- File entry --
+2019-05-13 15:45:03.082   Dest filename: C:\Program Files (x86)\Crestron\Simpl\Simpl+lr.chm
+2019-05-13 15:45:03.082   Time stamp of our file: 2019-01-08 14:23:24.000
+2019-05-13 15:45:03.082   Installing the file.
+2019-05-13 15:45:03.120   Successfully installed the file.
+2019-05-13 15:45:03.120   -- File entry --
+2019-05-13 15:45:03.121   Dest filename: C:\Program Files (x86)\Crestron\Simpl\simpl_release_notes.html
+2019-05-13 15:45:03.122   Time stamp of our file: 2019-03-12 12:52:14.000
+2019-05-13 15:45:03.122   Installing the file.
+2019-05-13 15:45:03.128   Successfully installed the file.
+2019-05-13 15:45:03.128   -- File entry --
+2019-05-13 15:45:03.128   Dest filename: C:\Program Files (x86)\Crestron\Simpl\SmplCplr.dll
+2019-05-13 15:45:03.129   Time stamp of our file: 2019-03-12 12:42:14.000
+2019-05-13 15:45:03.129   Installing the file.
+2019-05-13 15:45:03.141   Successfully installed the file.
+2019-05-13 15:45:03.141   -- File entry --
+2019-05-13 15:45:03.141   Dest filename: C:\Program Files (x86)\Crestron\Simpl\SmplProj.dll
+2019-05-13 15:45:03.142   Time stamp of our file: 2019-03-12 12:42:20.000
+2019-05-13 15:45:03.142   Installing the file.
+2019-05-13 15:45:03.146   Successfully installed the file.
+2019-05-13 15:45:03.146   -- File entry --
+2019-05-13 15:45:03.146   Dest filename: C:\Program Files (x86)\Crestron\Simpl\smpwin.exe
+2019-05-13 15:45:03.146   Time stamp of our file: 2019-03-12 12:52:16.000
+2019-05-13 15:45:03.146   Installing the file.
+2019-05-13 15:45:03.309   Successfully installed the file.
+2019-05-13 15:45:03.309   -- File entry --
+2019-05-13 15:45:03.309   Dest filename: C:\Program Files (x86)\Crestron\Simpl\smpwin.ico
+2019-05-13 15:45:03.309   Time stamp of our file: 2019-01-08 14:23:00.000
+2019-05-13 15:45:03.309   Installing the file.
+2019-05-13 15:45:03.316   Successfully installed the file.
+2019-05-13 15:45:03.316   -- File entry --
+2019-05-13 15:45:03.316   Dest filename: C:\Program Files (x86)\Crestron\Simpl\SPlusCC.exe
+2019-05-13 15:45:03.316   Time stamp of our file: 2019-03-12 12:52:18.000
+2019-05-13 15:45:03.316   Installing the file.
+2019-05-13 15:45:03.320   Successfully installed the file.
+2019-05-13 15:45:03.321   -- File entry --
+2019-05-13 15:45:03.321   Dest filename: C:\Program Files (x86)\Crestron\Simpl\SSharpUtilities.dll
+2019-05-13 15:45:03.321   Time stamp of our file: 2019-03-12 12:41:42.000
+2019-05-13 15:45:03.321   Installing the file.
+2019-05-13 15:45:03.325   Successfully installed the file.
+2019-05-13 15:45:03.325   -- File entry --
+2019-05-13 15:45:03.325   Dest filename: C:\Program Files (x86)\Crestron\Simpl\swinrel.css
+2019-05-13 15:45:03.325   Time stamp of our file: 2019-03-12 12:52:12.000
+2019-05-13 15:45:03.325   Installing the file.
+2019-05-13 15:45:03.327   Successfully installed the file.
+2019-05-13 15:45:03.327   -- File entry --
+2019-05-13 15:45:03.327   Dest filename: C:\Program Files (x86)\Crestron\Simpl\tabs.css
+2019-05-13 15:45:03.327   Time stamp of our file: 2019-03-12 12:52:12.000
+2019-05-13 15:45:03.328   Installing the file.
+2019-05-13 15:45:03.329   Successfully installed the file.
+2019-05-13 15:45:03.330   -- File entry --
+2019-05-13 15:45:03.330   Dest filename: C:\Program Files (x86)\Crestron\Simpl\tab_b.gif
+2019-05-13 15:45:03.330   Time stamp of our file: 2019-03-12 12:52:12.000
+2019-05-13 15:45:03.330   Installing the file.
+2019-05-13 15:45:03.332   Successfully installed the file.
+2019-05-13 15:45:03.332   -- File entry --
+2019-05-13 15:45:03.332   Dest filename: C:\Program Files (x86)\Crestron\Simpl\tab_l.gif
+2019-05-13 15:45:03.332   Time stamp of our file: 2019-03-12 12:52:12.000
+2019-05-13 15:45:03.332   Installing the file.
+2019-05-13 15:45:03.334   Successfully installed the file.
+2019-05-13 15:45:03.335   -- File entry --
+2019-05-13 15:45:03.335   Dest filename: C:\Program Files (x86)\Crestron\Simpl\tab_r.gif
+2019-05-13 15:45:03.335   Time stamp of our file: 2019-03-12 12:52:12.000
+2019-05-13 15:45:03.335   Installing the file.
+2019-05-13 15:45:03.339   Successfully installed the file.
+2019-05-13 15:45:03.340   -- File entry --
+2019-05-13 15:45:03.340   Dest filename: C:\Program Files (x86)\Crestron\Simpl\Trackerbird.dll
+2019-05-13 15:45:03.342   Time stamp of our file: 2019-01-08 14:21:54.000
+2019-05-13 15:45:03.342   Installing the file.
+2019-05-13 15:45:03.399   Successfully installed the file.
+2019-05-13 15:45:03.399   -- File entry --
+2019-05-13 15:45:03.399   Dest filename: C:\Program Files (x86)\Crestron\Simpl\XMLDoc.dll
+2019-05-13 15:45:03.399   Time stamp of our file: 2019-03-12 12:42:12.000
+2019-05-13 15:45:03.399   Installing the file.
+2019-05-13 15:45:03.406   Successfully installed the file.
+2019-05-13 15:45:03.406   -- File entry --
+2019-05-13 15:45:03.406   Dest filename: C:\Program Files (x86)\Crestron\Simpl\CSharpCompiler.dll
+2019-05-13 15:45:03.406   Time stamp of our file: 2019-03-12 12:52:06.000
+2019-05-13 15:45:03.406   Dest file exists.
+2019-05-13 15:45:03.406   Time stamp of existing file: 2019-03-12 12:52:06.000
+2019-05-13 15:45:03.406   Version of our file: 1.0.7010.21039
+2019-05-13 15:45:03.435   Version of existing file: 1.0.7010.21039
+2019-05-13 15:45:03.435   Same version. Skipping.
+2019-05-13 15:45:03.435   Installing into GAC
+2019-05-13 15:45:03.735   -- File entry --
+2019-05-13 15:45:03.735   Dest filename: C:\Program Files (x86)\Crestron\Simpl\Interop.CAPICOM.dll
+2019-05-13 15:45:03.736   Time stamp of our file: 2019-03-12 12:41:16.000
+2019-05-13 15:45:03.736   Dest file exists.
+2019-05-13 15:45:03.736   Time stamp of existing file: 2019-03-12 12:41:16.000
+2019-05-13 15:45:03.736   Version of our file: 2.1.0.0
+2019-05-13 15:45:03.749   Version of existing file: 2.1.0.0
+2019-05-13 15:45:03.749   Same version. Skipping.
+2019-05-13 15:45:03.749   Installing into GAC
+2019-05-13 15:45:04.067   -- File entry --
+2019-05-13 15:45:04.067   Dest filename: C:\WINDOWS\system32\capicom.dll
+2019-05-13 15:45:04.068   Time stamp of our file: 2019-01-08 14:24:28.000
+2019-05-13 15:45:04.068   Installing the file.
+2019-05-13 15:45:04.091   Successfully installed the file.
+2019-05-13 15:45:04.091   Will register the file (a DLL/OCX) later.
+2019-05-13 15:45:04.091   -- File entry --
+2019-05-13 15:45:04.091   Dest filename: C:\Program Files (x86)\Crestron\Simpl\Cm2CtrlDbx.ocx
+2019-05-13 15:45:04.092   Time stamp of our file: 2019-03-12 12:41:12.000
+2019-05-13 15:45:04.092   Installing the file.
+2019-05-13 15:45:04.098   Successfully installed the file.
+2019-05-13 15:45:04.098   Will register the file (a DLL/OCX) later.
+2019-05-13 15:45:04.098   -- File entry --
+2019-05-13 15:45:04.098   Dest filename: C:\Program Files (x86)\Crestron\Simpl\CmSmplLt.dll
+2019-05-13 15:45:04.098   Time stamp of our file: 2019-03-12 12:45:22.000
+2019-05-13 15:45:04.098   Installing the file.
+2019-05-13 15:45:04.127   Successfully installed the file.
+2019-05-13 15:45:04.127   Will register the file (a DLL/OCX) later.
+2019-05-13 15:45:04.127   -- File entry --
+2019-05-13 15:45:04.127   Dest filename: C:\Program Files (x86)\Crestron\Simpl\cmCfgTrX.ocx
+2019-05-13 15:45:04.128   Time stamp of our file: 2019-03-12 12:42:22.000
+2019-05-13 15:45:04.128   Installing the file.
+2019-05-13 15:45:04.139   Successfully installed the file.
+2019-05-13 15:45:04.139   Will register the file (a DLL/OCX) later.
+2019-05-13 15:45:04.139   -- Icon entry --
+2019-05-13 15:45:04.139   Filename: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Crestron\SIMPL Windows\SIMPL Windows.lnk
+2019-05-13 15:45:04.139   Creating directory: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Crestron\SIMPL Windows
+2019-05-13 15:45:04.242   -- Icon entry --
+2019-05-13 15:45:04.242   Filename: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Crestron\SIMPL Windows\SIMPL Windows Help File.lnk
+2019-05-13 15:45:04.252   -- Icon entry --
+2019-05-13 15:45:04.252   Filename: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Crestron\SIMPL Windows\SIMPL+ Editor.lnk
+2019-05-13 15:45:04.292   Registering 32-bit DLL/OCX: C:\WINDOWS\system32\capicom.dll
+2019-05-13 15:45:04.296   Spawning 32-bit RegSvr32: "C:\WINDOWS\system32\regsvr32.exe" /s "C:\WINDOWS\system32\capicom.dll"
+2019-05-13 15:45:04.540   Registration successful.
+2019-05-13 15:45:04.540   Registering 32-bit DLL/OCX: C:\Program Files (x86)\Crestron\Simpl\Cm2CtrlDbx.ocx
+2019-05-13 15:45:04.542   Spawning 32-bit RegSvr32: "C:\WINDOWS\system32\regsvr32.exe" /s "C:\Program Files (x86)\Crestron\Simpl\Cm2CtrlDbx.ocx"
+2019-05-13 15:45:04.762   Registration successful.
+2019-05-13 15:45:04.762   Registering 32-bit DLL/OCX: C:\Program Files (x86)\Crestron\Simpl\CmSmplLt.dll
+2019-05-13 15:45:04.765   Spawning 32-bit RegSvr32: "C:\WINDOWS\system32\regsvr32.exe" /s "C:\Program Files (x86)\Crestron\Simpl\CmSmplLt.dll"
+2019-05-13 15:45:05.525   Registration successful.
+2019-05-13 15:45:05.525   Registering 32-bit DLL/OCX: C:\Program Files (x86)\Crestron\Simpl\cmCfgTrX.ocx
+2019-05-13 15:45:05.528   Spawning 32-bit RegSvr32: "C:\WINDOWS\system32\regsvr32.exe" /s "C:\Program Files (x86)\Crestron\Simpl\cmCfgTrX.ocx"
+2019-05-13 15:45:05.608   Registration successful.
+2019-05-13 15:45:05.617   Installation process succeeded.
+2019-05-13 15:45:05.617   Need to restart Windows? No
+2019-05-13 15:45:05.632   Deinitializing Setup.
+2019-05-13 15:45:05.639   Log closed.

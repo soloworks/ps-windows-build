@@ -29,25 +29,24 @@ param(
 )
 # Setup Script Variables
 $progressPreference = 'silentlyContinue'  # Stop downloads showing progress - speeds things up a LOT
-$WorkDir = $env:TEMP+'\Azure-AudioVisual-Tools-Agent\' # Temp Working Directory
+$WorkDir = $env:TEMP+'\Install-AV-Software\' # Temp Working Directory
 
 # Setup Try/Finally block to allow clean exit
 try{
 
     # Make temp directory
-    New-Item -Path $WorkDir -ItemType Directory -Force
+    New-Item -Path $WorkDir -ItemType Directory -Force | Out-Null
 
     # Misc Software
     if($DevOps -eq $true){
         # Git for Windows 
         $Version = '-2.21.0-64-bit'
         $FileEXE = "$($WorkDir)Git$($Version).exe"
-        Write-Output $FileEXE
-        Write-Output "Git $($Version) Downloading"
-        Invoke-WebRequest -Uri "https://files.soloworks.co.uk/amx/NetLinxStudioSetup$($Version).exe" -OutFile $FileEXE
-        Write-Output "Git $($Version) Installing"
+        Write-Output "Git$($Version) Downloading"
+        Invoke-WebRequest -Uri "https://files.soloworks.co.uk/git/Git$($Version).exe" -OutFile $FileEXE
+        Write-Output "Git$($Version) Installing"
         Start-Process -FilePath $FileEXE -ArgumentList "/VERYSILENT" -Wait
-        Write-Output "Git $($Version) Installed"
+        Write-Output "Git$($Version) Installed"
 
     }
 
@@ -60,7 +59,6 @@ try{
         # Netlinx Studio 4.4.1626 - NS.exe /help for options
         $Version = '_4_4_1626'
         $FileEXE = "$($WorkDir)NetLinxStudioSetup$($Version).exe"
-        Write-Output $FileEXE
         Write-Output "AMX NetLinxStudio$($Version) Downloading"
         Invoke-WebRequest -Uri "https://files.soloworks.co.uk/amx/NetLinxStudioSetup$($Version).exe" -OutFile $FileEXE
         Write-Output "AMX NetLinxStudio$($Version) Installing"
@@ -72,7 +70,7 @@ try{
     }
 
     # Crestron Software
-    if(($Crestron -eq $true) -and ($DevOps -eq $false)){
+    if(($Crestron -eq $true) -or ($DevOps -eq $true)){
         # SIMPL Windows
         # From Master Installer Log:
         # C:\Program Files (x86)\Crestron\Downloads\simpl_windows_4.11.06.01.exe /MASTERINSTALLER=TRUE /VERYSILENT /NORESTART /DIR="C:\Program Files (x86)\Crestron\Simpl" /LOG="C:\Program Files (x86)\Crestron\Downloads\InnoSetup.log" 
@@ -132,7 +130,7 @@ try{
         Write-Output "Extron DSP_Configurator$($Version) Installed"
         
     }
-    if(($Extron -eq $true) -and ($DevOpsOnly -eq $false)){
+    if(($Extron -eq $true) -or ($DevOpsOnly -eq $true)){
         # DevOps Only Options Here
     }
     
@@ -162,7 +160,7 @@ try{
         Start-Process -FilePath $FileEXE -ArgumentList "/s" -Wait
         Write-Output "Extron Q-SYS UCI Viewer Installer$($Version) Installed"
     }
-    if(($QSC -eq $true) -and ($DevOpsOnly -eq $false)){
+    if(($QSC -eq $true) -or ($DevOpsOnly -eq $true)){
         # DevOps Options Here
     }
 }

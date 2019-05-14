@@ -25,7 +25,7 @@ param(
     [switch]$Extron       = $false,
     [switch]$QSC          = $false,
 
-    [switch]$DevOpsOnly   = $false
+    [switch]$DevOps       = $false
 )
 # Setup Script Variables
 $progressPreference = 'silentlyContinue'  # Stop downloads showing progress - speeds things up a LOT
@@ -37,12 +37,15 @@ try{
     # Make temp directory
     New-Item -Path $WorkDir -ItemType Directory -Force
 
+    # Misc Software
+
+
     # AMX Software
-    if(($AMX -eq $true) -and ($DevOpsOnly -eq $false)){
+    if($AMX -eq $true){
         #TODO: TPDesign 4
         #TODO: TPDesign 5
     }
-    if($AMX -eq $true){
+    if(($AMX -eq $true) -or ($DevOps -eq $true)){
         # Netlinx Studio 4.4.1626 - NS.exe /help for options
         $Version = '_4_4_1626'
         $FileEXE = "$($WorkDir)NetLinxStudioSetup$($Version).exe"
@@ -58,7 +61,7 @@ try{
     }
 
     # Crestron Software
-    if($Crestron -eq $true){
+    if(($Crestron -eq $true) -and ($DevOps -eq $false)){
         # SIMPL Windows
         # From Master Installer Log:
         # C:\Program Files (x86)\Crestron\Downloads\simpl_windows_4.11.06.01.exe /MASTERINSTALLER=TRUE /VERYSILENT /NORESTART /DIR="C:\Program Files (x86)\Crestron\Simpl" /LOG="C:\Program Files (x86)\Crestron\Downloads\InnoSetup.log" 
@@ -82,14 +85,14 @@ try{
         Start-Process -FilePath $FileEXE -ArgumentList "/a /s /f1`"$($FileISS)`"" -Wait
         Write-Output "Crestron Simpl+CC Installed"
     }
-    if(($Crestron -eq $true) -and ($DevOpsOnly -eq $false)){
+    if($Crestron -eq $true){
         #TODO: VTPro
         #TODO: TOOLBOX
         #TODO: CrestronDatabase
     }
     
     # Extron Software
-    if(($Extron -eq $true) -and ($DevOpsOnly -eq $false)){
+    if($Extron -eq $true){
         #TODO: Toolbelt                  Toolbelt_v2x3x0
         #TODO: Global Scripter -         GlobalScripter_v2x3x0
         #TODO: Global Configurator -     GC3x5x2
@@ -118,12 +121,12 @@ try{
         Write-Output "Extron DSP_Configurator$($Version) Installed"
         
     }
-    if($Extron -eq $true){
+    if(($Extron -eq $true) -and ($DevOpsOnly -eq $false)){
         # DevOps Only Options Here
     }
     
     # QSC Software
-    if(($QSC -eq $true) -and ($DevOpsOnly -eq $false)){
+    if($QSC -eq $true){
         # Set Version for all
         $Version = '8.0.0'
         # Q-SYS Administrator Installer
@@ -148,8 +151,8 @@ try{
         Start-Process -FilePath $FileEXE -ArgumentList "/s" -Wait
         Write-Output "Extron Q-SYS UCI Viewer Installer$($Version) Installed"
     }
-    if($QSC -eq $true){
-        # DevOps Only Options Here
+    if(($QSC -eq $true) -and ($DevOpsOnly -eq $false)){
+        # DevOps Options Here
     }
 }
 # Clean Up

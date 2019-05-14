@@ -119,16 +119,37 @@ try{
         
     }
     if($Extron -eq $true){
-
+        # DevOps Only Options Here
     }
     
     # QSC Software
-    if(($Extron -eq $true) -and ($DevOpsOnly -eq $false)){
-        #TODO: Main Tools
-        
+    if(($QSC -eq $true) -and ($DevOpsOnly -eq $false)){
+        # Set Version for all
+        $Version = '8.0.0'
+        # Q-SYS Administrator Installer
+        $FileEXE = "$($WorkDir)Q-SYS Administrator Installer$($Version).exe"
+        Write-Output "Extron Q-SYS Administrator Installer$($Version) Downloading"
+        Invoke-WebRequest -Uri "https://files.soloworks.co.uk/qsc/Q-SYS Administrator Installer$($Version).exe" -OutFile $FileEXE
+        Write-Output "Extron Q-SYS Administrator Installer$($Version) Installing"
+        Start-Process -FilePath $FileEXE -ArgumentList "/s" -Wait
+        Write-Output "Extron Q-SYS Administrator Installer$($Version) Installed"
+        # Q-SYS Designer Installer
+        $FileEXE = "$($WorkDir)Q-SYS Designer Installer$($Version).exe"
+        Write-Output "Extron Q-SYS Designer Installer$($Version) Downloading"
+        Invoke-WebRequest -Uri "https://files.soloworks.co.uk/qsc/Q-SYS Designer Installer$($Version).exe" -OutFile $FileEXE
+        Write-Output "Extron Q-SYS Designer Installer$($Version) Installing"
+        Start-Process -FilePath $FileEXE -ArgumentList "/s" -Wait
+        Write-Output "Extron Q-SYS Designer Installer$($Version) Installed"
+        # Q-SYS UCI Viewer Installer
+        $FileEXE = "$($WorkDir)Q-SYS UCI Viewer Installer$($Version).exe"
+        Write-Output "Extron Q-SYS UCI Viewer Installer$($Version) Downloading"
+        Invoke-WebRequest -Uri "https://files.soloworks.co.uk/qsc/Q-SYS UCI Viewer Installer$($Version).exe" -OutFile $FileEXE
+        Write-Output "Extron Q-SYS UCI Viewer Installer$($Version) Installing"
+        Start-Process -FilePath $FileEXE -ArgumentList "/s" -Wait
+        Write-Output "Extron Q-SYS UCI Viewer Installer$($Version) Installed"
     }
-    if($Extron -eq $true){
-
+    if($QSC -eq $true){
+        # DevOps Only Options Here
     }
 }
 # Clean Up

@@ -38,7 +38,18 @@ try{
     New-Item -Path $WorkDir -ItemType Directory -Force
 
     # Misc Software
+    if($DevOps -eq $true){
+        # Git for Windows 
+        $Version = '-2.21.0-64-bit'
+        $FileEXE = "$($WorkDir)Git$($Version).exe"
+        Write-Output $FileEXE
+        Write-Output "Git $($Version) Downloading"
+        Invoke-WebRequest -Uri "https://files.soloworks.co.uk/amx/NetLinxStudioSetup$($Version).exe" -OutFile $FileEXE
+        Write-Output "Git $($Version) Installing"
+        Start-Process -FilePath $FileEXE -ArgumentList "/VERYSILENT" -Wait
+        Write-Output "Git $($Version) Installed"
 
+    }
 
     # AMX Software
     if($AMX -eq $true){
@@ -52,9 +63,9 @@ try{
         Write-Output $FileEXE
         Write-Output "AMX NetLinxStudio$($Version) Downloading"
         Invoke-WebRequest -Uri "https://files.soloworks.co.uk/amx/NetLinxStudioSetup$($Version).exe" -OutFile $FileEXE
-        Write-Output "AMX NetLinxStudio Installing"
+        Write-Output "AMX NetLinxStudio$($Version) Installing"
         Start-Process -FilePath $FileEXE -ArgumentList "/quiet" -Wait
-        Write-Output "AMX NetlinxStudio Installed"
+        Write-Output "AMX NetLinxStudio$($Version) Installed"
     }
     if($AMX -eq $true){
         # TPDesign 5

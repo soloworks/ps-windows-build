@@ -25,7 +25,8 @@ param(
     [switch]$Extron       = $false,
     [switch]$QSC          = $false,
 
-    [switch]$DevOps       = $false
+    [switch]$DevOps       = $false,
+    [switch]$Tools       = $false
 )
 # Setup Script Variables
 $progressPreference = 'silentlyContinue'  # Stop downloads showing progress - speeds things up a LOT
@@ -38,7 +39,7 @@ try{
     New-Item -Path $WorkDir -ItemType Directory -Force | Out-Null
 
     # Misc Software
-    if($DevOps -eq $true){
+    if(($DevOps -eq $true) -or ($Tools -eq $true)){
         # Git for Windows 
         $Version = '-2.21.0-64-bit'
         $FileEXE = "$($WorkDir)Git$($Version).exe"
@@ -157,28 +158,28 @@ try{
     # QSC Software
     if($QSC -eq $true){
         # Set Version for all
-        $Version = '8.0.0'
+        $Version = ' 8.0.0'
         # Q-SYS Administrator Installer
         $FileEXE = "$($WorkDir)Q-SYS Administrator Installer$($Version).exe"
-        Write-Output "Extron Q-SYS Administrator Installer$($Version) Downloading"
+        Write-Output "QSC Q-SYS Administrator Installer$($Version) Downloading"
         Invoke-WebRequest -Uri "https://files.soloworks.co.uk/qsc/Q-SYS Administrator Installer$($Version).exe" -OutFile $FileEXE
-        Write-Output "Extron Q-SYS Administrator Installer$($Version) Installing"
+        Write-Output "QSC Q-SYS Administrator Installer$($Version) Installing"
         Start-Process -FilePath $FileEXE -ArgumentList "/s" -Wait
-        Write-Output "Extron Q-SYS Administrator Installer$($Version) Installed"
+        Write-Output "QSC Q-SYS Administrator Installer$($Version) Installed"
         # Q-SYS Designer Installer
         $FileEXE = "$($WorkDir)Q-SYS Designer Installer$($Version).exe"
-        Write-Output "Extron Q-SYS Designer Installer$($Version) Downloading"
+        Write-Output "QSC Q-SYS Designer Installer$($Version) Downloading"
         Invoke-WebRequest -Uri "https://files.soloworks.co.uk/qsc/Q-SYS Designer Installer$($Version).exe" -OutFile $FileEXE
-        Write-Output "Extron Q-SYS Designer Installer$($Version) Installing"
+        Write-Output "QSC Q-SYS Designer Installer$($Version) Installing"
         Start-Process -FilePath $FileEXE -ArgumentList "/s" -Wait
-        Write-Output "Extron Q-SYS Designer Installer$($Version) Installed"
+        Write-Output "QSC Q-SYS Designer Installer$($Version) Installed"
         # Q-SYS UCI Viewer Installer
         $FileEXE = "$($WorkDir)Q-SYS UCI Viewer Installer$($Version).exe"
-        Write-Output "Extron Q-SYS UCI Viewer Installer$($Version) Downloading"
+        Write-Output "QSC Q-SYS UCI Viewer Installer$($Version) Downloading"
         Invoke-WebRequest -Uri "https://files.soloworks.co.uk/qsc/Q-SYS UCI Viewer Installer$($Version).exe" -OutFile $FileEXE
-        Write-Output "Extron Q-SYS UCI Viewer Installer$($Version) Installing"
+        Write-Output "QSC Q-SYS UCI Viewer Installer$($Version) Installing"
         Start-Process -FilePath $FileEXE -ArgumentList "/s" -Wait
-        Write-Output "Extron Q-SYS UCI Viewer Installer$($Version) Installed"
+        Write-Output "QSC Q-SYS UCI Viewer Installer$($Version) Installed"
     }
     if(($QSC -eq $true) -or ($DevOpsOnly -eq $true)){
         # DevOps Options Here

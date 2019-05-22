@@ -73,6 +73,25 @@ try{
     if(($Crestron -eq $true) -or ($DevOps -eq $true)){
         # SIMPL Windows
         # From Master Installer Log:
+
+        # C:\Program Files (x86)\Crestron\Downloads\crestron_database_77.00.003.00.exe /MASTERINSTALLER=TRUE /VERYSILENT /NORESTART /DIR="C:\Program Files (x86)\Crestron\Cresdb" /LOG="C:\Program Files (x86)\Crestron\Downloads\InnoSetup.log" 
+        $Version = '_77.05.001.00'
+        $FileEXE = "$($WorkDir)crestron_database$($Version).exe"
+        Write-Output "Crestron crestron_database$($Version) Downloading"
+        Invoke-WebRequest -Uri "https://files.soloworks.co.uk/crestron/crestron_database$($Version).exe" -OutFile $FileEXE
+        Write-Output "Crestron Crestron Database Installing"
+        Start-Process -FilePath $FileEXE -ArgumentList "/MASTERINSTALLER=TRUE /VERYSILENT /NORESTART /DIR=`"C:\Program Files (x86)\Crestron\Cresdb`"" -Wait
+        Write-Output "Crestron Cretron Database Installed"
+        
+        # C:\Program Files (x86)\Crestron\Downloads\device_database_102.05.001.00.exe /MASTERINSTALLER=TRUE /VERYSILENT /NORESTART /DIR="C:\Program Files (x86)\Crestron\Cresdb" /LOG="C:\Program Files (x86)\Crestron\Downloads\InnoSetup.log"
+        $Version = '_103.05.001.00'
+        $FileEXE = "$($WorkDir)device_database$($Version).exe"
+        Write-Output "Crestron device_database$($Version) Downloading"
+        Invoke-WebRequest -Uri "https://files.soloworks.co.uk/crestron/device_database$($Version).exe" -OutFile $FileEXE
+        Write-Output "Crestron Device Database Installing"
+        Start-Process -FilePath $FileEXE -ArgumentList "/MASTERINSTALLER=TRUE /VERYSILENT /NORESTART /DIR=`"C:\Program Files (x86)\Crestron\Cresdb`"" -Wait
+        Write-Output "Crestron Device Database Installed"
+
         # C:\Program Files (x86)\Crestron\Downloads\simpl_windows_4.11.06.01.exe /MASTERINSTALLER=TRUE /VERYSILENT /NORESTART /DIR="C:\Program Files (x86)\Crestron\Simpl" /LOG="C:\Program Files (x86)\Crestron\Downloads\InnoSetup.log" 
         $Version = '_4.11.06.01'
         $FileEXE = "$($WorkDir)simpl_windows$($Version).exe"
@@ -97,7 +116,8 @@ try{
     if($Crestron -eq $true){
         #TODO: VTPro
         #TODO: TOOLBOX
-        #TODO: CrestronDatabase
+        #TODO: Crestron Database
+        #TODO: Device Database
     }
     
     # Extron Software

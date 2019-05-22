@@ -5,6 +5,8 @@
 #
 # Run script as Admin to prevent UAC prompts
 #
+# May need to run command: "Set-ExecutionPolicy RemoteSigned"
+#
 # Currently supports:
 #
 #   - AMX Netlinx Studio 4.4.1626
@@ -31,6 +33,7 @@ param(
 # Setup Script Variables
 $progressPreference = 'silentlyContinue'  # Stop downloads showing progress - speeds things up a LOT
 $WorkDir = $env:TEMP+'\Install-AV-Software\' # Temp Working Directory
+$FileHost = "https://files.soloworks.co.uk"
 
 # Setup Try/Finally block to allow clean exit
 try{
@@ -40,14 +43,24 @@ try{
 
     # Misc Software
     if(($DevOps -eq $true) -or ($Tools -eq $true)){
+
+        # Visual Studio Code
+        $Version = '-x64-1.34.0'
+        $FileEXE = "VSCodeUserSetup$($Version).exe"
+        Write-Output "Visual Studio Code  ($($FileEXE))"
+        Invoke-WebRequest -Uri "$($FileHost)/Microsoft/$($FileEXE)" -OutFile "$($WorkDir)$($FileEXE)"
+        Write-Output "Visual Studio Code Installing"
+        Start-Process -FilePath "$($WorkDir)$($FileEXE)" -ArgumentList "/VERYSILENT /NORESTART /MERGETASKS=!runcode" -Wait
+        Write-Output "Visual Studio Code Installed"
+
         # Git for Windows 
-        $Version = '-2.21.0-64-bit'
-        $FileEXE = "$($WorkDir)Git$($Version).exe"
-        Write-Output "Git$($Version) Downloading"
-        Invoke-WebRequest -Uri "https://files.soloworks.co.uk/git/Git$($Version).exe" -OutFile $FileEXE
-        Write-Output "Git$($Version) Installing"
-        Start-Process -FilePath $FileEXE -ArgumentList "/VERYSILENT" -Wait
-        Write-Output "Git$($Version) Installed"
+        $Version     = '-2.21.0-64-bit'
+        $FileEXE     = "Git$($Version).exe"
+        Write-Output "Git for Windows Downloading ($($FileEXE))"
+        Invoke-WebRequest -Uri "$($FileHost)/git/$($FileEXE)" -OutFile "$($WorkDir)$($FileEXE)"
+        Write-Output "Git for Windows Installing"
+        Start-Process -FilePath "$($WorkDir)$($FileEXE)" -ArgumentList "/VERYSILENT" -Wait
+        Write-Output "Git for Windows Installed"
 
     }
 
@@ -60,11 +73,11 @@ try{
         # Netlinx Studio 4.4.1626 - NS.exe /help for options
         $Version = '_4_4_1626'
         $FileEXE = "$($WorkDir)NetLinxStudioSetup$($Version).exe"
-        Write-Output "AMX NetLinxStudio$($Version) Downloading"
+        Write-Output "AMX Netlinx Studio Downloading (NetLinxStudio$($Version).exe)"
         Invoke-WebRequest -Uri "https://files.soloworks.co.uk/amx/NetLinxStudioSetup$($Version).exe" -OutFile $FileEXE
-        Write-Output "AMX NetLinxStudio$($Version) Installing"
+        Write-Output "AMX NetLinx Studio Installing"
         Start-Process -FilePath $FileEXE -ArgumentList "/quiet" -Wait
-        Write-Output "AMX NetLinxStudio$($Version) Installed"
+        Write-Output "AMX NetLinx Studio Installed"
     }
     if($AMX -eq $true){
         # TPDesign 5
@@ -78,7 +91,7 @@ try{
         # C:\Program Files (x86)\Crestron\Downloads\crestron_database_77.00.003.00.exe /MASTERINSTALLER=TRUE /VERYSILENT /NORESTART /DIR="C:\Program Files (x86)\Crestron\Cresdb" /LOG="C:\Program Files (x86)\Crestron\Downloads\InnoSetup.log" 
         $Version = '_77.05.001.00'
         $FileEXE = "$($WorkDir)crestron_database$($Version).exe"
-        Write-Output "Crestron crestron_database$($Version) Downloading"
+        Write-Output "Crestron Database Downloading (crestron_database$($Version).exe)"
         Invoke-WebRequest -Uri "https://files.soloworks.co.uk/crestron/crestron_database$($Version).exe" -OutFile $FileEXE
         Write-Output "Crestron Crestron Database Installing"
         Start-Process -FilePath $FileEXE -ArgumentList "/MASTERINSTALLER=TRUE /VERYSILENT /NORESTART /DIR=`"C:\Program Files (x86)\Crestron\Cresdb`"" -Wait

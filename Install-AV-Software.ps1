@@ -24,6 +24,7 @@ param(
     [switch]$AMX          = $false,
     [switch]$Extron       = $false,
     [switch]$QSC          = $false,
+    [switch]$Lightware    = $false,
 
     [switch]$DevOps       = $false
 )
@@ -89,7 +90,6 @@ try{
         Write-Output "Crestron Simpl+CC$($Version) Downloading"
         Invoke-WebRequest -Uri "https://files.soloworks.co.uk/crestron/simpl_plus_cross_compiler$($Version).exe" -OutFile $FileEXE
         Invoke-WebRequest -Uri "https://files.soloworks.co.uk/crestron/simpl_plus_cross_compiler$($Version).iss" -OutFile $FileISS
-        
         Write-Output "Crestron Simpl+CC Installing"
         Start-Process -FilePath $FileEXE -ArgumentList "/a /s /f1`"$($FileISS)`"" -Wait
         Write-Output "Crestron Simpl+CC Installed"
@@ -114,7 +114,6 @@ try{
         $FileEXE = "$($WorkDir)PCS$($Version).exe"
         Write-Output "Extron PCS$($Version) Downloading"
         Invoke-WebRequest -Uri "https://files.soloworks.co.uk/extron/PCS$($Version).exe" -OutFile $FileEXE
-         
         Write-Output "Extron PCS$($Version) Installing"
         Start-Process -FilePath $FileEXE -ArgumentList "/s" -Wait
         Write-Output "Extron PCS$($Version) Installed"
@@ -124,7 +123,6 @@ try{
         $FileEXE = "$($WorkDir)DSP_Configurator$($Version).exe"
         Write-Output "Extron DSP_Configurator$($Version) Downloading"
         Invoke-WebRequest -Uri "https://files.soloworks.co.uk/extron/DSP_Configurator$($Version).exe" -OutFile $FileEXE
-         
         Write-Output "Extron DSP_Configurator$($Version) Installing"
         Start-Process -FilePath $FileEXE -ArgumentList "/s" -Wait
         Write-Output "Extron DSP_Configurator$($Version) Installed"
@@ -162,6 +160,42 @@ try{
     }
     if(($QSC -eq $true) -or ($DevOpsOnly -eq $true)){
         # DevOps Options Here
+    }
+    
+    # Lightware Software
+    if(($Lightware -eq $true) -or ($DevOpsOnly -eq $true)){
+        # DevOps Only Options Here
+    }
+    
+    # QSC Software
+    if($Lightware -eq $true){
+        # Lightware Device Updater
+        $Version = '_v1.5.3b4'
+        $FileEXE = "$($WorkDir)install_LDU$($Version).exe"
+        Write-Output "Lightware install_LDU$($Version) Downloading"
+        Invoke-WebRequest -Uri "https://files.soloworks.co.uk/lightware/install_LDU$($Version).exe" -OutFile $FileEXE
+        Write-Output "Lightware install_LDU$($Version) Installing"
+        Start-Process -FilePath $FileEXE -ArgumentList "/s" -Wait
+        Write-Output "Lightware install_LDU$($Version) Installed"
+
+        # Lightware Device Updater 2
+        $Version = '_v1.2.3b3'
+        $FileEXE = "$($WorkDir)install_LDU2$($Version).exe"
+        Write-Output "Lightware install_LDU2$($Version) Downloading"
+        Invoke-WebRequest -Uri "https://files.soloworks.co.uk/lightware/install_LDU2$($Version).exe" -OutFile $FileEXE
+        Write-Output "Lightware install_LDU2$($Version) Installing"
+        Start-Process -FilePath $FileEXE -ArgumentList "/s" -Wait
+        Write-Output "Lightware install_LDU2$($Version) Installed"
+
+        # Lightware Device Controller
+        $Version = '_v1.29.0b1'
+        $FileEXE = "$($WorkDir)install_LDC$($Version).exe"
+        Write-Output "Lightware install_LDC$($Version) Downloading"
+        Invoke-WebRequest -Uri "https://files.soloworks.co.uk/lightware/install_LDC$($Version).exe" -OutFile $FileEXE
+        Write-Output "Lightware install_LDC$($Version) Installing"
+        Start-Process -FilePath $FileEXE -ArgumentList "/s" -Wait
+        Write-Output "Lightware install_LDC$($Version) Installed"
+
     }
 }
 # Clean Up
